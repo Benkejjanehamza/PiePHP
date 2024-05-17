@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_URI} !^/(webroot/.+|index.php|robots.txt)$
+RewriteRule ^ index.php [QSA,L]
